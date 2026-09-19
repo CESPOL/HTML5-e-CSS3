@@ -18,3 +18,8 @@ Aprenda HTML5, CSS3 e SEO de forma simples, prática e objetiva desenvolvendo pa
 [icon-icons](https://icon-icons.com/pt/)
 
 [optmizilla](https://imagecompressor.com/pt)
+
+### Validação W3C
+[html](validator.w3.org)
+
+[css](https://jigsaw.w3.org/css-validator/)
