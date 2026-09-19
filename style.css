@@ -5,6 +5,50 @@
 
 */
 
-body{
-    background-color: aqua;
+/*
+    Ajuste de dimensões da janela do vanegador adaptando 
+    para o tipo de dispositivo utilizado
+*/
+
+/* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 576px*/
+/* 
+    Se o formato de visualização estiver na horizontal (Landscape) ele fica com fundo azul
+    Se ficar na vertical (Portrait) ele vai ficar com a configuração programada em Portrait acima
+*/
+@media (min-width: 576px){
+    body{
+        background-color: aqua;
+    }
 }
+
+/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 768px */
+@media (min-width: 768px){
+    body{
+        background-color: yellow;
+    }
+
+/* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 992px){
+    body{
+        background-color: #ff6600;
+    }
+
+/* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 1200px){
+    body{
+        background-color: #ff0000;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
