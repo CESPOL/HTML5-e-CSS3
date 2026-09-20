@@ -18,12 +18,30 @@
 </head>
 <body>
     <!-- Cabeçalho -->
-    <header>
+    <header id="inicio">
         <!-- IMPORTANTE: CSS Flexbox - Fundação Flexível
         Layout fonte, responsivo e flexível
         Organiza as tags dentro de um container de forma dinamica -->
-        <div class="Container">
-
+        <div class="Container Flex">
+            <!-- Logo do site  -->
+            <div id="logo">
+                <!-- atributo alt otimizaçao do site e  -->
+                <img src="img/logozvnofundo.png" alt="hal 9000">
+            </div>
+            <!-- Menu Hamburger -->
+             <nav>
+                <input type="checkbox" id="check">
+                <!-- usado um codigo unicode pego no site unicode.org/charts 
+                - Miscellaneous Symbols = 286c que tem uma imagem do igual = 
+                de forma mais extendida simulando um hamburger -->
+                <label for="check">&#x268c;</label>                  
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#conteudo">Conteúdo</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>                             
+             </nav>             
         </div>
     </header>
 
@@ -36,7 +54,7 @@
     </main>
       
     <!-- Sobre - Conteudo relacionado -->
-    <section>
+    <section id="sobre">
         <div class="Container">
             <h2>Aprender na prática.</h2>
         </div>        
@@ -58,7 +76,7 @@
     </section>
 
     <!-- conteudo - alguns cartoes -->
-    <section>
+    <section id="conteudo">
         <div class="Container">
             <h2>Conteúdo</h2> 
             <h3>HTML5</h3>
@@ -68,10 +86,13 @@
     </section>
 
     <!-- rodape -->
-    <footer>
+    <footer id="contato">
         <div class="Container">
 
         </div>
     </footer>
-    
+    <!-- botao volta para o topo do site 
+     id topo identificar para o css trabalhar ele vai ser colocado no canto direito -->
+    <a href="#inicio" id="topo"><img src="img/topo.png" alt="topo do site"></a>
+
 </body>
