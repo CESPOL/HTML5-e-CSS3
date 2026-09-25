@@ -41,6 +41,25 @@ body{
     /*background-color: #a9a9a9;*/
 }
 
+.Botao {
+    /* remocao do sublinhado do link*/
+    text-decoration: none;
+    color: #fff;
+    /* aumentando um pouco a fonte */
+    font-size: 1.3em;
+    /* peso pra fonte aumentada como um negrito */ 
+    font-weight: 700;
+    /* cor de fundo do botao */
+    background-color: #c00000;
+    /* largura e altura do fundo do botao*/
+    padding: 10px 40px;
+    /* define a borda do botao*/
+    border: 2px solid #fff;
+    /* arredondamento dos cantos da borda*/
+    border-radius: 25px;
+
+}
+
 
 /* Topo do site */
 #topo {
@@ -107,6 +126,36 @@ nav ul li a {
     color: #fff;
 }
 
+/* Destaque */
+main {
+    /*75vh = 75% do tamanho da tela*/
+    height: 75vh;
+    /*inserir imagem para um banner*/
+    background: url(img/banner.jpg);
+    /*ajusta o tamanho da tela do background ao tamanho da tela do dispositivo*/
+    background-size: cover;
+    /* define letra cor branca */
+    color : #fff;
+    /* flexBox - centralizacao do conteudo
+    tanto na vertical quanto na horizontal*/
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    text-align: center;
+}
+
+main h1 {
+    /* ajusta o tamanho da fonte h1 de main*/
+    font-size: 2.5em;
+}
+
+main h2 {
+    /* ajusta o tamanho da fonte h2 de main */
+    font-size: 1em;
+    /* margem para separar os elementos: sup, direita, inf, esquerda */
+    margin: 20px 0px 50px 0px;
+}
+
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 576px*/
 /* 
     Se o formato de visualização estiver na horizontal (Landscape) ele fica com fundo azul
@@ -127,6 +176,20 @@ nav ul li a {
     .Container{
         max-width: 7200px;
     }
+    
+    /* Destaque */
+    /* aumentar o tamanho da altura do banner para tablets na vertical*/
+    main{
+        height: 45vh;
+    }
+
+    main h1 {
+        font-size: 5.5em;
+    }
+
+    main h2 {
+        font-size: 2em;        
+    }
 }
 
 /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -135,6 +198,21 @@ nav ul li a {
     /* Layout*/
     .Container{
         max-width: 9600px;
+    }
+
+    /* Destaque */
+    /* Cria um destaque dentro do banner 
+    indicando quais os conteudos estarao em detaque criando um fundo de sombreamento nos elementos dentro do banner*/
+    /* seleciona o mesmo estilo para diversos tipos de elemento que estao indicados um a um separando cada um deles pela virgula */
+    main h1, main h2 {
+        /* cria um sombreamento no texto */
+        text-shadow: #000 0.05em 0.05em 0.05em;
+    }
+
+     /* aumentar o tamanho da altura do banner para tablets na horizontal */
+     /* mantem o padrao para notebooks ou PCs*/
+    main{
+        height: 70vh;
     }
 }
 
@@ -185,6 +263,9 @@ nav ul li a {
     nav ul li a:hover {
         /*color - cor do texto dos links*/
         color: #c00000;
+    }
 
+    main{
+        height: 70vh;
     }
 }
